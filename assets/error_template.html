@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="us-ascii" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style media="screen" type="text/css">
+/* -------------------------------------
+        GLOBAL
+------------------------------------- */
+
+      * {
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      }
+
+      body {
+        height: 100%;
+        margin: 0;
+        background-color: #efefef;
+      }
+
+      dl {
+        border-left: solid 3px #cc0000; /* Sets red bar on the left */
+        padding-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      dd {
+        padding: 0;
+        margin: 0;
+      }
+
+      a.button {
+        text-align: center;
+        background-color: #033d58; /* Button color */
+        border: none;
+        color: white;
+        padding: 12px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        display: inline-block;
+        color: white;
+        width: 300px;
+      }
+
+/* -------------------------------------
+        BODY TABLE
+------------------------------------- */
+
+      .body-wrap {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #efefef;
+        padding: 0;
+        vertical-align: top;
+        border: none;
+      }
+
+/* -------------------------------------
+        MAIN ERROR TABLE
+------------------------------------- */
+      .container {
+        display: block;
+        max-width: 800px;
+        margin: 0 auto auto auto; /* Makes it centered and aligned to top*/
+        clear: both;
+        padding: 15px;
+        background-color: #ffffff;
+        border: 0;
+      }
+
+/* -------------------------------------
+        TYPOGRAPHY
+------------------------------------- */
+
+      dl {
+        font-family: monospace;
+      }
+
+      h1 {
+        line-height: 1.1;
+        margin-bottom: 15px;
+        color: #000000;
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-left: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        color: #000000;
+        font-size: 15px;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  </head>
+
+  <!-- BODY -->
+
+  <body>
+    <table class="body-wrap">
+      <tr>
+        <td class="body-wrap">
+          <div align="center">
+            <table class="container" style="border-top: 5px solid rgb(0, 118, 179)" cellpadding="0">
+              <tr>
+                <td>
+                  <h1>##ERROR_TITLE##</h1>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>StackTrace</h4>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <dl>
+                    ##STACk_TRACE##
+                  </dl>
+                </td>
+              </tr>
+
+<!--              <tr>-->
+<!--                <td>-->
+<!--                  <dl>-->
+<!--                    <dd class="bold">Error in Salesforce Case to Jira Issue Process</dd>-->
+<!--                    <dd>Error occurred at 07/03/2020 6:05:11 AM</dd>-->
+<!--                    <dd>Document ID: Case Number: 321321</dd>-->
+<!--                    <dd>Error Message: Error creating Jira Issue because server is down.</dd>-->
+<!--                  </dl>-->
+<!--                </td>-->
+<!--              </tr>-->
+
+<!--              <tr>-->
+<!--                <td style="padding-top: 10px;">-->
+<!--                  <div align="center">-->
+<!--                    <a-->
+<!--                      class="button"-->
+<!--                      href="https://platform.boomi.com/AtomSphere.html#reporting;accountId=<accountId>;executionId=<executionId>""-->
+<!--                      target="_blank"-->
+<!--                      >Boomi Platform Execution Log</a-->
+<!--                    >-->
+<!--                  </div>-->
+<!--                </td>-->
+<!--              </tr>-->
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- /BODY -->
+  </body>
+</html>
